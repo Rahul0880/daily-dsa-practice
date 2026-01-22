@@ -32,3 +32,22 @@ int main() {
 //This is optimized approach with O(n) time complexity and O(1) space complexity
 
 //Brute force approach with O(n^2) time complexity and O(1) space complexity
+/*int removeDuplicatesBruteForce(vector<int>& nums) {
+    int n = nums.size();
+    if(n == 0) return 0;
+    int writeIndex = 1; // Index to write the next unique element
+    for(int i = 1; i < n; i++) {
+        bool isDuplicate = false;
+        for(int j = 0; j < writeIndex; j++) {
+            if(nums[i] == nums[j]) {
+                isDuplicate = true;
+                break;
+            }
+        }
+        if(!isDuplicate) {
+            nums[writeIndex] = nums[i];
+            writeIndex++;
+        }
+    }
+    return writeIndex; // New length of the array with unique elements
+}*/
