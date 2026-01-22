@@ -8,9 +8,9 @@ using namespace std;
 //int fun name to return single value
 int removeDuplicates(vector<int>& nums) {
     if(nums.empty()) return 0;
-    int writeIndex = 1; // Index to write the next unique element
-    for(int i = 1; i < nums.size(); i++) {
-        if(nums[i] != nums[i - 1]) {
+    int writeIndex = 0; // Index to write the next unique element
+    for(int i = 0; i < nums.size(); i++) {
+        if(nums[i] != nums[i + 1]) {
             nums[writeIndex] = nums[i];
             writeIndex++;
         }
