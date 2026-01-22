@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-//Brute force approach 
+//Brute force approach with O(n^2) time complexity and O(1) space complexity
 
 vector<int> twoSumBruteForce(vector<int>& nums, int target) {
     int n = nums.size();
@@ -25,3 +25,21 @@ int main() {
     }
     return 0;
 }
+
+
+//Optimized approach with O(n) time complexity and O(1) space complexity
+/*vector<int> twoSumOptimized(vector<int>& nums, int target) {
+    int left = 0;
+    int right = nums.size() - 1;
+    while(left < right) {
+        int currentSum = nums[left] + nums[right];
+        if(currentSum == target) {
+            return {left, right};
+        } else if(currentSum < target) {
+            left++;
+        } else {
+            right--;
+        }
+    }
+    return {};
+}*/
