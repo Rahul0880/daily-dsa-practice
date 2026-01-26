@@ -1,4 +1,7 @@
 //Bubble Sort Algorithm in C++
+// Logic: The algorithm repeatedly steps through the list, compares adjacent elements
+// and swaps them if they are in the wrong order. The pass through the list is repeated
+// until the list is sorted.
 #include <bits/stdc++.h>
 using namespace std;
 
